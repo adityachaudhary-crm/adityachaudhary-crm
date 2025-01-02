@@ -1,4 +1,4 @@
-<div style="margin-left: 20px;">
+
 **Salesforce II Generation Package**
 
 Salesforce II Generation packages can be created - **Managed and Unmanaged** using CLI, 2 Salesforce Developer Orgs and one Scratch Org. 
@@ -44,4 +44,3 @@ The sfdx-project.json gets updated after each command. The final version looks l
   }
 }
 ```
-</div>
