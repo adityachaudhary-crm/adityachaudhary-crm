@@ -17,7 +17,8 @@ The second command bundles the code, configuration and uploads in to Salesforce 
 I tested it on a fresh Salesforce Org and it installed the package and it's components.   
 
 The sfdx-project.json gets updated after each command. The final version looks like the below
-{
+
+```{
   "packageDirectories": [
     {
       "path": "source/commerce",
@@ -40,4 +41,4 @@ The sfdx-project.json gets updated after each command. The final version looks l
     "E-Commerce App": "0Hoaj0000000J4HCAU",
     "E-Commerce App@0.1.0-1": "04taj000000589pAAA"
   }
-}
+}```
