@@ -1,6 +1,6 @@
-alesforce II Generation Package
+**Salesforce II Generation Package**
 
-Salesforce II Generation packages can be created - Managed and Unmanaged using CLI, 2 Salesforce Developer Orgs and one Scratch Org. 
+Salesforce II Generation packages can be created - **Managed and Unmanaged** using CLI, 2 Salesforce Developer Orgs and one Scratch Org. 
 
 1. Salesforce Org => Namespace
 2. Salesforce Org => Dev Hub Org and Link Namespace from first Salesforde Org with this Org. 
