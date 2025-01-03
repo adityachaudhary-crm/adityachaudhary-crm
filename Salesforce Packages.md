@@ -96,8 +96,14 @@ The sfdx-project.json gets updated after each command. The final version looks l
 	List all packages created  in Dev Hub 	Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04taj00000059HBAAY
 ```
 
+I installed both Managed and Unlocked 2nd Generation packages. Some differences on Objects are  best descriibed in images below
+
 ![Screenshot 2025-01-03 at 1 27 21 AM](https://github.com/user-attachments/assets/72a0f9da-fe55-4808-9153-8d894b702d1e)
 
+![Screenshot 2025-01-03 at 1 26 48 AM](https://github.com/user-attachments/assets/cabd7544-2a11-4b3a-bacf-c62a650d3147)
+
+
+![Screenshot 2025-01-03 at 1 19 08 AM](https://github.com/user-attachments/assets/aaf800d2-d035-4aa0-8737-1a6a1c964a4b)
 
 
 
