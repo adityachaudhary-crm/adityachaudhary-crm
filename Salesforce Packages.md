@@ -106,6 +106,7 @@ I installed both Managed and Unlocked 2nd Generation packages. Some differences 
 ![Screenshot 2025-01-03 at 1 19 08 AM](https://github.com/user-attachments/assets/aaf800d2-d035-4aa0-8737-1a6a1c964a4b)
 
 
+![Screenshot 2025-01-03 at 1 36 17 AM](https://github.com/user-attachments/assets/0c241a38-0e71-4344-8c71-eb0394b3c749)
 
 
 
