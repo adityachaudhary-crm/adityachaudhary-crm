@@ -85,3 +85,18 @@ In memory:
 A function is not stored as plain text but as a compiled bytecode representation along with metadata.
 The text of the function may still be available for introspection (e.g., using .toString()), but it is not used during execution.
 This approach allows JavaScript engines to optimize function execution for speed and efficiency.
+
+
+
+1. JavaScript Engine in the Browser Runtime
+The JavaScript engine (e.g., V8 in Chrome, SpiderMonkey in Firefox) is responsible for executing JavaScript code.
+However, the JavaScript engine by itself only understands and executes core JavaScript features, as defined by the ECMAScript standard.
+2. Browser Runtime
+The browser runtime is the complete environment provided by a web browser to run web applications. It includes:
+
+The JavaScript engine for executing JavaScript code.
+A set of APIs and objects specific to web development, such as:
+The DOM API (document, window, element.addEventListener(), etc.).
+Browser-specific APIs (fetch, localStorage, console.log, etc.).
+Rendering engines (e.g., Blink for Chrome) to display the webpage.
+
