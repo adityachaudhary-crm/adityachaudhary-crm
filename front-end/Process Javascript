@@ -1,0 +1,87 @@
+How is Javscript processed by Javascript Engine? 
+
+. Function Representation in Memory
+When a JavaScript function is defined, the JavaScript engine (e.g., V8 in Chrome) goes through the following steps:
+
+Step 1: Parsing
+The engine reads the source code (as text) and parses it into an Abstract Syntax Tree (AST).
+The AST is a structured representation of the code's syntax.
+Step 2: Compilation
+The engine compiles the function into bytecode (a lower-level representation optimized for execution).
+Bytecode is not human-readable text but an intermediate representation understood by the JavaScript engine's interpreter or JIT (Just-In-Time) compiler.
+Step 3: Function Object
+A function object is created in memory, which contains:
+A reference to the compiled bytecode (the actual instructions to execute the function).
+Metadata about the function, such as its name, number of arguments, default values, closures, and the lexical environment in which it was defined.
+
+2. How Is the Function Stored in Memory?
+In memory, the function exists as a data structure. For example:
+
+Text of the Function:
+
+This is only retained as metadata, typically for debugging purposes or when you explicitly call .toString() on the function.
+Compiled Code:
+
+The actual instructions to execute the function are stored in the engine's memory as bytecode, ready for interpretation or optimization by the JIT compiler.
+
+3. Example: Function in Source Code and Memory
+Source Code:
+javascript
+Copy code
+function add(a, b) {
+    return a + b;
+}
+In Memory (Conceptual Representation):
+Function Metadata:
+
+Name: add
+Parameters: a, b
+Lexical Environment: Scope where add was declared
+Reference to Bytecode: Points to compiled instructions
+Compiled Instructions (Bytecode):
+
+The engine compiles the add function into bytecode like:
+css
+Copy code
+LOAD a
+LOAD b
+ADD
+RETURN
+This bytecode is stored in memory and executed when the function is called.
+4. Can We Retrieve the Function Text?
+If you want to see the text representation of a function, JavaScript provides the .toString() method:
+
+Example:
+javascript
+Copy code
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add.toString());
+Output:
+
+javascript
+Copy code
+function add(a, b) {
+    return a + b;
+}
+This text is primarily stored for debugging or introspection purposes, but the actual execution uses the compiled bytecode.
+5. Why Not Store Functions as Text?
+Storing functions as plain text is inefficient for execution because:
+
+Text Requires Reinterpretation:
+Each time the function is called, the engine would need to re-parse and re-interpret the text, which would be slow.
+Compiled Code Is Faster:
+Bytecode is much more efficient for execution because it is closer to machine code and optimized for the engine's interpreter.
+6. Under the Hood: JavaScript Engines
+Modern JavaScript engines like V8 use a combination of interpreters and JIT compilers to execute functions:
+
+Initially, the engine interprets the bytecode to execute the function quickly.
+Frequently called functions (hot code) are further optimized into machine code for better performance.
+Summary
+In memory:
+
+A function is not stored as plain text but as a compiled bytecode representation along with metadata.
+The text of the function may still be available for introspection (e.g., using .toString()), but it is not used during execution.
+This approach allows JavaScript engines to optimize function execution for speed and efficiency.
